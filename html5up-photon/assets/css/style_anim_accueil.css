@@ -35,10 +35,10 @@
 }
 .wall-poster {
   position: absolute;
-  left: 620px;
+  left: 75vw;
   top: -70px;
-  width: 200px;
-  height: 252px;
+  width: 250px;
+  height: 315px;
   background: #190e28;
   background: #211138;
   overflow: hidden;
@@ -60,9 +60,10 @@
   bottom: 10px;
   display: block;
   font-size: 40px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1;
   text-align: left;
+  padding: 2vh;
 }
 .wall-poster h2 {
   position: absolute;
@@ -91,7 +92,7 @@
 }
 .mr-akabei {
   position: absolute;
-  right: 12px;
+  right: 4vh;
   bottom: 80px;
   width: 60px;
   height: 60px;
@@ -132,7 +133,7 @@
 
 .mr-pacman {
   position: absolute;
-  right: 70px;
+  right: 10.5vh;
   bottom: 10px;
   width: 40px;
   height: 40px;
@@ -518,6 +519,7 @@
 }
 .pw-btn {
   position: absolute;
+  z-index: 9999;
   left: 36px;
   bottom: 4px;
   width: 10px;
@@ -560,7 +562,7 @@
   border-radius: 12px;
   background: black;
   overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
+  /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 .tv-glass canvas {
   position: absolute;
@@ -702,7 +704,7 @@ iframe {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  -webkit-transform: translate3d(0, 0, 0);
+  /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 .tv-flashing i {
   -moz-filter: blur(10px);
@@ -1153,6 +1155,7 @@ iframe {
   height: 4px;
   border-radius: 2px;
   background: #ee8b3c;
+  z-index: 9998;
 }
 .console-btn-first,
 .console-btn-second {
@@ -1770,25 +1773,25 @@ iframe {
 *::after {
   box-sizing: inherit;
 }
-#html,
+/*#html,
 body {
   width: 100%;
   height: 100%;
-}
-body {
-  position: relative;
+}*/
+/*body {*/
+  /*position: relative;
   min-width: 960px;
-  min-height: 540px;
-  margin: 0;
-  line-height: 1;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 18px;
-  font-family: 'VT323', Georgia, "Times New Roman", Times, serif;
-  color: #000;
-  background: #110c1e;
-  -webkit-font-smoothing: antialiased;
-}
+  min-height: 540px;*/
+  /*margin: 0;*/
+  /*line-height: 1;*/
+  /*font-size: 12px;*/
+  /*font-size: 1.2rem;*/
+  /*line-height: 18px;*/
+  /*font-family: 'VT323', Georgia, "Times New Roman", Times, serif;*/
+  /*color: #000;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*background: #110c1e;*/
+/*}*/
 #anim {
   margin: 0;
   padding: 0;
@@ -1832,7 +1835,6 @@ body {
 #anim form,
 #anim label,
 #anim legend,
-#anim button,
 #anim table,
 #anim caption,
 #anim tbody,
@@ -1844,9 +1846,11 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  line-height: 18px;
   line-height: 1;
-  font-family: inherit;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: 'VT323', Georgia, "Times New Roman", Times, serif;
 }
 #anim {
   font-size: 62.5%;
